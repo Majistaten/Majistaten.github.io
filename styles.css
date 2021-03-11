@@ -59,3 +59,8 @@ input {
   height: 2rem;
   padding: 0.35rem 0.75rem;
 }
+
+.input-radio {
+  display: inline-block;
+  margin: 0.1rem auto 0.1rem auto;
+}

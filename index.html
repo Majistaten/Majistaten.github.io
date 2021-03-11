@@ -38,7 +38,7 @@
         />
       </div>
       <div class="form-group">
-        <label id="age-label" for="number"
+        <label id="number-label" for="number"
           >Age<span style="color: #c0c0c0; font-size: 0.9rem">
             <i>(optional)</i></span
           >
@@ -54,14 +54,44 @@
         />
       </div>
       <div class="form-group">
-        <label for="options">What is your favourite choir?</label>
-        <select name="option" id="options" class="form-control" required>
+        <label for="dropdown">What is your favourite choir?</label>
+        <select name="option" id="dropdown" class="form-control" required>
           <option disabled selected>Favored choir</option>
           <option value="dishes">Doing the dishes</option>
           <option value="grass">Mowing the lawn</option>
           <option value="vacuum">Vacuuming</option>
           <option value="trash">Taking out the trash</option>
         </select>
+      </div>
+      <div class="form-group">
+        <p>This is the question</p>
+        <label
+          ><input
+            type="radio"
+            name="pick-one"
+            value="This one"
+            class="input-radio"
+          />
+          This one
+        </label>
+        <label
+          ><input
+            type="radio"
+            name="pick-one"
+            value="one one"
+            class="input-radio"
+          />
+          One one
+        </label>
+        <label
+          ><input
+            type="radio"
+            name="pick-one"
+            value="that one"
+            class="input-radio"
+          />
+          That one
+        </label>
       </div>
     </form>
   </body>
