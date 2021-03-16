@@ -57,13 +57,13 @@
         />
       </div>
       <div id="dropdown-div" class="form-group">
-        <label for="dropdown">What is your favourite choir?</label>
+        <label for="dropdown">Dropdown question</label>
         <select name="option" id="dropdown" class="form-control" required>
-          <option disabled selected>Favored choir</option>
-          <option value="dishes">Doing the dishes</option>
-          <option value="grass">Mowing the lawn</option>
-          <option value="vacuum">Vacuuming</option>
-          <option value="trash">Taking out the trash</option>
+          <option disabled selected>Non-option preselect</option>
+          <option value="option1">Option1</option>
+          <option value="option2">Option2</option>
+          <option value="option3">Option3</option>
+          <option value="option4">Option4</option>
         </select>
       </div>
       <div id="radio-div" class="form-group">
@@ -75,8 +75,8 @@
             value="This one"
             class="input-radio"
           />
-          This one
-        </label>
+          This one </label
+        ><br />
         <label
           ><input
             type="radio"
@@ -84,8 +84,8 @@
             value="one one"
             class="input-radio"
           />
-          One one
-        </label>
+          One one </label
+        ><br />
         <label
           ><input
             type="radio"
@@ -97,7 +97,7 @@
         </label>
       </div>
       <div id="checkbox-div" class="form-group">
-        <p>Questioning the questions question</p>
+        <p>Checkbox question</p>
         <label
           ><input
             type="checkbox"
@@ -136,7 +136,7 @@
             name="pick-many"
             value="some-one"
             class="input-checkbox"
-          />some one</label
+          />Is one</label
         ><br />
         <label
           ><input
@@ -164,19 +164,16 @@
         >
       </div>
       <div id="textarea-div" class="form-group">
-        <label for="textarea">Input something here</label>
+        <label for="textarea">Input something here</label><br />
         <textarea
           name="textarea"
           id="textarea"
-          cols="30"
-          rows="10"
-          wordcount
-          placeholder="What is this box?"
+          placeholder="This box is well designed for plenty of text. Or atleast some text."
           class="input-textarea"
         ></textarea>
       </div>
       <div>
-        <input id="submit" type="submit" value="Submit" />
+        <button type="submit" id="submit" class="submit-button">Submit</button>
       </div>
     </form>
     <footer></footer>

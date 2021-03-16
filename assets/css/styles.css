@@ -1,9 +1,10 @@
 :root {
   --color-purple: #5a005a;
   --color-white: #ebebeb;
-  --color-yellow-alpha: rgba(255, 230, 0, 0.158);
+  --color-yellow-alpha: rgba(255, 230, 0, 0.233);
   --color-pale: #c0c0c0cb;
   --color-golden: #ffee00d7;
+  --color-green: rgb(128, 250, 128);
 }
 
 html {
@@ -23,9 +24,12 @@ body {
 
 form {
   background: var(--color-yellow-alpha);
-  padding: 3rem 2rem;
+  padding: 3rem;
   border-radius: 0.7rem;
-  margin: 4rem 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 45rem;
+  width: 80%;
   border: var(--color-golden);
   border-width: 0.12rem;
   border-style: outset;
@@ -33,13 +37,29 @@ form {
   backdrop-filter: blur(0.8rem);
 }
 
+@media (min-width: 480px) {
+  form {
+    padding: 1.5rem;
+  }
+}
+
+select,
+button,
+textarea,
 input {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  color: rgb(31, 29, 29);
   text-shadow: 0.1rem 0.1rem var(--color-pale);
+}
+
+button[type=submit] {
+  background: var(--color-white);
+}
+
+button[type=submit]:hover {
+ background-color: var(--color-green);
 }
 
 .header {
@@ -63,18 +83,31 @@ input {
 .form-control {
   display: block;
   border-radius: 0.3rem;
-  width: auto;
+  width: 100%;
   height: 2rem;
-  padding: 0.35rem 0.75rem;
+  padding: 0.25rem;
+  border: var(--color-purple);
+  border-width: 0.15rem;
+  border-style: outset;
 }
 
+.input-checkbox,
 .input-radio {
   display: inline-block;
-  margin: 0.1rem auto 0.1rem auto;
-}
-
-.input-checkbox {
+  margin-right: 0.6rem;
 }
 
 .input-textarea {
+  width: 100%;
+  min-height: 6rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.submit-button {
+  display: block;
+  width: 20%;
+  padding: 0.8rem;
+  border: 0;
+  border-radius: 0.3rem;
 }
